@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletor de cores</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Cookie&family=Montserrat+Subrayada&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div id="conteudo">
+    <div id="info">
+      <h1>Seletor de cores</h1>
+      <p>Seletor de cores em rgb, simples e útil.</p>
+    </div>
+    <div id="controle-de-cores">
+      <label for="red">R</label><input type="range" name="red" id="vermelho" min="0" max="255" value="0">
+
+      <label for="green">G</label><input type="range" name="green" id="verde" min="0" max="255" value="0">
+
+      <label for="blue">B</label><input type="range" name="blue" id="azul" min="0" max="255" value="0">
+
+      <button class="btn" data-clipboard-target="#copiar" data-clipboard-action="copy">copiar</button>
+    </div>
+    <div id="display"></div>
+    <div id="valores">
+      <input type="text" class="input-vermelho item" value="" class="progress-bar bg-danger" disabled>
+      <input type="text" class="input-verde item" value="" class="progress-bar bg-success" disabled>
+      <input type="text" class="input-azul item" value="" class="progress-bar bg-info" disabled>
+      <input type="text" name="valor total" id="copiar" class="invisible">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
