@@ -138,11 +138,11 @@ input[type=text] {
   padding-top: 4px;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 450px) {
   #conteudo {
-    grid-template-rows:100px 50px 400px;
-    grid-template-columns: 350px 100px;
-  }
+    grid-template-rows: 4rem 3rem 25rem;
+    grid-template-columns: 17rem 2rem;
+}
   #controle-de-cores {
     margin-top: 10px;
   }
@@ -150,6 +150,35 @@ input[type=text] {
     width: 50px;
   }
   input[type=range]{
-    width: 16.1%;
+    width: 12.5%;
+  }
+  #info h1{
+    font-size: 1.5rem;
+  }
+  #info p{
+    font-size: 0.8rem;
   }
 }
+
+  @media (max-width:320px){
+    #conteudo {
+      grid-template-rows: 0.1fr 0.1fr 0.1fr;
+      grid-template-columns: 0.8fr 0.3fr;
+    }
+    #controle-de-cores {
+      margin-top: 10px;
+    }
+    input[type=text]{
+      width: 50px;
+      margin-bottom: 30px;
+    }
+    input[type=range]{
+      width: 1.8rem;
+    }
+    #info h1{
+      font-size: 1.5rem;
+    }
+    #info p{
+      font-size: 0.8rem;
+    }
+  }
