@@ -137,3 +137,19 @@ input[type=text] {
 
   padding-top: 4px;
 }
+
+@media screen and (max-width: 660px) {
+  #conteudo {
+    grid-template-rows:100px 50px 400px;
+    grid-template-columns: 350px 100px;
+  }
+  #controle-de-cores {
+    margin-top: 10px;
+  }
+  input[type=text]{
+    width: 50px;
+  }
+  input[type=range]{
+    width: 16.1%;
+  }
+}
